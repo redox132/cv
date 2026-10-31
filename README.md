@@ -4,11 +4,7 @@ Personal CV / portfolio site. Plain HTML + CSS, no build step, no framework — 
 
 ## Editing
 
-Open `index.html` and edit directly. Things marked with a `placeholder` tag or obviously generic text (e.g. "Company Name", the LinkedIn link) are examples and should be replaced with real details:
-
-- **Experience** — the three entries under "Experience" are example structure based on repos/activity visible on this machine; replace with your actual work history.
-- **LinkedIn** — currently a placeholder link; update `href` in the contact nav.
-- **Skills / Projects** — adjust to match what you actually want to highlight.
+Open `index.html` and edit directly. Generic text like "Company Name" / "City, Country" under "Experience" is example structure — replace with your actual work history. Adjust Skills and Projects to match what you want to highlight.
 
 ## Local preview
 

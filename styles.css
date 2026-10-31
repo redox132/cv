@@ -6,8 +6,6 @@
   --border: #e6e3dd;
   --accent: #8a5a3b;
   --accent-soft: #f1e6dc;
-  --tag-bg: #f1e6dc;
-  --tag-text: #7a5436;
 
   --font-display: "Fraunces", Georgia, "Times New Roman", serif;
   --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -21,8 +19,6 @@
   --border: #322e26;
   --accent: #d8a06f;
   --accent-soft: #2a2319;
-  --tag-bg: #2a2319;
-  --tag-text: #d8a06f;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -34,8 +30,6 @@
     --border: #322e26;
     --accent: #d8a06f;
     --accent-soft: #2a2319;
-    --tag-bg: #2a2319;
-    --tag-text: #d8a06f;
   }
 }
 
@@ -144,26 +138,6 @@ h1 {
   font-weight: 500;
   font-size: 1.5rem;
   margin: 0 0 24px;
-}
-
-.section-note {
-  margin: -12px 0 24px;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-
-.tag {
-  display: inline-block;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--tag-text);
-  background: var(--tag-bg);
-  border-radius: 999px;
-  padding: 2px 9px;
-  margin-left: 6px;
-  vertical-align: middle;
 }
 
 /* Skills */
