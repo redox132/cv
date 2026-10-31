@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rida El Kouri — Senior Software Engineer</title>
+<meta name="description" content="Rida El Kouri, Senior Software Engineer — backend, cloud, and full-stack systems." />
+<link rel="icon" href="data:," />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+  <span class="theme-toggle__icon" aria-hidden="true"></span>
+</button>
+
+<main class="wrap">
+
+  <header class="hero">
+    <p class="eyebrow">Senior Software Engineer</p>
+    <h1>Rida El&nbsp;Kouri</h1>
+    <p class="lede">
+      I build backend systems and full-stack products — from service
+      architecture and data modeling to the interfaces people actually touch.
+      Comfortable owning a problem end to end: design, implementation,
+      deployment, and the maintenance that comes after.
+    </p>
+    <nav class="hero-links" aria-label="Contact and profiles">
+      <a href="mailto:ridaelkouri@gmail.com">ridaelkouri@gmail.com</a>
+      <a href="https://github.com/redox132" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/rida-el-kouri/" target="_blank" rel="noopener">LinkedIn <span class="tag">placeholder</span></a>
+    </nav>
+  </header>
+
+  <section class="section" aria-labelledby="skills-heading">
+    <h2 id="skills-heading">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Languages</h3>
+        <p>C#, TypeScript, JavaScript, SQL, PHP</p>
+      </div>
+      <div class="skill-group">
+        <h3>Backend &amp; Services</h3>
+        <p>.NET / ASP.NET Core, microservices, REST &amp; gRPC APIs, Laravel</p>
+      </div>
+      <div class="skill-group">
+        <h3>Frontend</h3>
+        <p>React, Next.js, Tailwind CSS</p>
+      </div>
+      <div class="skill-group">
+        <h3>Data &amp; Messaging</h3>
+        <p>PostgreSQL, MySQL, SQL Server, Supabase, RabbitMQ, Apache Kafka</p>
+      </div>
+      <div class="skill-group">
+        <h3>Cloud &amp; DevOps</h3>
+        <p>AWS, Docker, CI/CD &amp; deployment automation, Git</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="experience-heading">
+    <h2 id="experience-heading">Experience</h2>
+    <p class="section-note">Example structure below <span class="tag">placeholder — replace with your real history</span></p>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Senior Software Engineer <span class="entry-org">· Exact Solutions</span></h3>
+        <p class="entry-meta">2024 — Present · Remote</p>
+      </div>
+      <ul>
+        <li>Own backend architecture for a suite of microservices (auth, leave, attendance, payroll) built on .NET and PostgreSQL.</li>
+        <li>Lead the Next.js front end serving the product's public and internal surfaces.</li>
+        <li>Mentor junior engineers on service boundaries, testing, and deployment practices.</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Software Engineer <span class="entry-org">· Company Name</span></h3>
+        <p class="entry-meta">2021 — 2024 · City, Country</p>
+      </div>
+      <ul>
+        <li>Designed and shipped a multi-tenant SaaS platform from greenfield to production.</li>
+        <li>Built integrations with third-party marketplace and payment APIs.</li>
+        <li>Introduced CI/CD pipelines that cut deployment time significantly.</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-head">
+        <h3>Software Developer <span class="entry-org">· Company Name</span></h3>
+        <p class="entry-meta">2019 — 2021 · City, Country</p>
+      </div>
+      <ul>
+        <li>Developed and maintained internal tooling and customer-facing web applications.</li>
+        <li>Worked across the stack, from database schema design to UI implementation.</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="section" aria-labelledby="projects-heading">
+    <h2 id="projects-heading">Projects</h2>
+    <div class="projects-grid">
+      <article class="project">
+        <h3><a href="https://github.com/redox132/TradeFlow" target="_blank" rel="noopener">TradeFlow</a></h3>
+        <p>A marketplace API mirroring real-world platforms — authentication, order fulfillment, and product synchronization.</p>
+      </article>
+      <article class="project">
+        <h3><a href="https://github.com/redox132/WMS" target="_blank" rel="noopener">WMS</a></h3>
+        <p>Cross-platform Warehouse Management System for macOS, Windows, and Linux.</p>
+      </article>
+      <article class="project">
+        <h3><a href="https://github.com/redox132/MCP" target="_blank" rel="noopener">MCP Server</a></h3>
+        <p>A lightweight MCP server in C# / .NET exposing tools for AI assistants to query products, documents, and sales data.</p>
+      </article>
+      <article class="project">
+        <h3><a href="https://github.com/redox132?tab=repositories" target="_blank" rel="noopener">More on GitHub</a></h3>
+        <p>Additional projects, forks, and experiments — frameworks, APIs, and tooling.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Built by hand — plain HTML &amp; CSS, no framework.</p>
+  </footer>
+
+</main>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var toggle = document.getElementById('theme-toggle');
+    var stored = null;
+    try { stored = localStorage.getItem('theme'); } catch (e) {}
+    if (stored) root.setAttribute('data-theme', stored);
+
+    toggle.addEventListener('click', function () {
+      var current = root.getAttribute('data-theme');
+      var isDark = current
+        ? current === 'dark'
+        : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var next = isDark ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>
