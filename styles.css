@@ -228,15 +228,6 @@ h1 {
   font-size: 0.95rem;
 }
 
-/* Footer */
-.footer {
-  margin-top: 72px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border);
-  color: var(--text-muted);
-  font-size: 0.85rem;
-}
-
 @media (max-width: 560px) {
   .wrap {
     padding: 72px 20px 48px;
